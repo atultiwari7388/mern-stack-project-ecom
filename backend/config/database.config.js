@@ -11,7 +11,6 @@ const connectDatabase = async () => {
     .then((data) =>
       console.log(`Database connected with server ${data.connection.host}`)
     )
-    .catch((e) => console.log(`Not connected to database ${e}`))
 }
 
 module.exports = connectDatabase
